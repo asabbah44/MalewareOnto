@@ -23,6 +23,9 @@
   </owl:Class>
   <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
   <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Tag"/>
+  <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport">
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Report"/>
+  </owl:Class>
   <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasVendorIntel">
     <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
     <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
@@ -215,14 +218,14 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_a8dd89101dc76ed165c4aa82e157bdda468db826be0d56c4aafd32f5cf12e0e1">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:48:59</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:45:43</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-28 02:44:11</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_f7e3e1434a7701c49c0d07c88ecaad13df4d03e14a58da3937d0e5e278dc624c">
             <android_malware_ontology:hasOriginCountry>DE</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:40:53</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:36:11</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-26 02:49:40</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -321,7 +324,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_18092ae80a2f85f4486f38d1686025b610a7ccac741ac3fd1b7c9a2d2a85ea47">
         <android_malware_ontology:hasUploads>2</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>81</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>82</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasSHA256Hash>18092ae80a2f85f4486f38d1686025b610a7ccac741ac3fd1b7c9a2d2a85ea47</android_malware_ontology:hasSHA256Hash>
@@ -468,8 +471,8 @@
     <android_malware_ontology:hasTags>signed</android_malware_ontology:hasTags>
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_f7e3e1434a7701c49c0d07c88ecaad13df4d03e14a58da3937d0e5e278dc624c">
-        <android_malware_ontology:hasUploads>11</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>96</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasUploads>12</android_malware_ontology:hasUploads>
+        <android_malware_ontology:hasDownloads>97</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:reportedOn rdf:resource="http://idea.rpi.edu/malont#Application_.apk"/>
@@ -522,7 +525,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_a067fbec12a8465545e03cfe6e5529fba95498c69a46457a7aeb1361b2529a47">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>109</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>110</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:reportedOn>
@@ -709,8 +712,8 @@
     </android_malware_ontology:hasVendorIntel>
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_c29fef7ae07b6209b608bd91a9704594c587d7bb846181d3a8df7a37803f28f9">
-        <android_malware_ontology:hasUploads>8</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>139</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasUploads>9</android_malware_ontology:hasUploads>
+        <android_malware_ontology:hasDownloads>140</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasDeliveryMethod>web_download</android_malware_ontology:hasDeliveryMethod>
@@ -762,7 +765,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_c29fef7ae07b6209b608bd91a9704594c587d7bb846181d3a8df7a37803f28f9">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:38:34</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:47:07</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-29 02:41:29</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -807,8 +810,8 @@
   <android_malware_ontology:MalwareReport rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport_612683622ab49d8b52f893aa54b988e4badbcb4f0fae73d48c086e90f023d371">
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_612683622ab49d8b52f893aa54b988e4badbcb4f0fae73d48c086e90f023d371">
-        <android_malware_ontology:hasUploads>8</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>99</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasUploads>9</android_malware_ontology:hasUploads>
+        <android_malware_ontology:hasDownloads>100</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -846,7 +849,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_612683622ab49d8b52f893aa54b988e4badbcb4f0fae73d48c086e90f023d371">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:38:02</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:46:26</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-29 02:40:45</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -1035,7 +1038,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_200cf6e828ceecf44add627d97c0a893a517d8e318047b760c339b1572a0b303">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:40:28</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:44:31</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-18 02:47:12</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -1099,7 +1102,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_11d5f61a4248e2bd1a413582fc7022d88d2158a5861eb69973be03a67c372188">
         <android_malware_ontology:hasUploads>12</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>128</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>129</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasTags>apk</android_malware_ontology:hasTags>
@@ -1143,7 +1146,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_acd36f7e896e3e3806114d397240bd7431fcef9d7f0b268a4e889161e51d802b">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>99</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>100</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -1350,7 +1353,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_6463fba26e089c871f8c9fef02d935b9cb686a6570f901cec099e58493d8d2d4">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>106</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>107</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:reportedOn>
@@ -1564,7 +1567,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_bf5a45924b41b569b5d46794089118ed750fc0c56b01d843415aee87f23ed436">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>76</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>77</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasTags>apk</android_malware_ontology:hasTags>
@@ -1643,7 +1646,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_e65b5a77cba680eb8f3f59f21ba03a0d444e1df18303b09e3e3b5719eab105b7">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:49:59</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:36:44</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-01 03:02:02</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -1868,7 +1871,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_f760c8398ccfc999e331cda20371811b6c38eb1bc925f244923392ae812f4376">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>93</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>94</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasTags>banker</android_malware_ontology:hasTags>
@@ -1906,7 +1909,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_8015140c0f507d738cc0af0f8fbfec7f7d9e9dd2c069750de3fb49306fd5dd86">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>118</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>119</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -2271,7 +2274,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_080981eb2018eea58c82f2948ecee0026b70aab2d84cde58e556c12ada7405db">
         <android_malware_ontology:hasUploads>5</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>135</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>136</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:reportedOn>
@@ -2340,7 +2343,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_a05497647a879afec62bc7e916005f729fbfee48cfd56423481e0600061678b6">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:38:19</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:46:45</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-29 02:41:05</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -2481,7 +2484,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_4ca30f92aadf9409173eef9491281e7e389a9d9f913edf018d554339b7c12594">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>162</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>163</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -2665,7 +2668,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_7ba7505b93e251ea5b32285b0da00ce741ee52472a4277e1321eb6de3c4371f2">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:47:56</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:43:57</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-27 02:50:34</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -2678,8 +2681,8 @@
     <android_malware_ontology:hasTags>signed</android_malware_ontology:hasTags>
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_7ba7505b93e251ea5b32285b0da00ce741ee52472a4277e1321eb6de3c4371f2">
-        <android_malware_ontology:hasUploads>10</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>109</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasUploads>11</android_malware_ontology:hasUploads>
+        <android_malware_ontology:hasDownloads>110</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -2725,7 +2728,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_273ad3d99bfe92c6b1aaf164e9ccf21e6ebb6c2eb938f4b1ab36cc3d51463ab7">
         <android_malware_ontology:hasUploads>2</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>107</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>108</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasSHA256Hash>273ad3d99bfe92c6b1aaf164e9ccf21e6ebb6c2eb938f4b1ab36cc3d51463ab7</android_malware_ontology:hasSHA256Hash>
@@ -2912,7 +2915,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_677b8600adf2c4e1f17963eaaf18d57881a6a0c2ef5323c7f145b113480040df">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:49:40</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:45:24</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-20 02:23:57</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -3066,7 +3069,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_caf0a39318cfc1e65eae773a28de62ce08b7cf1b9d4264e843576165411e2a84">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>117</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>118</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -3194,7 +3197,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_917e29ff91324a6c3630f0eb392a6d1a5c394d7112b35ef29e7cc0269e4c1445">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:49:22</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:45:05</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-06-27 02:49:30</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -3238,7 +3241,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_7231546ee377738cbe9075791eb6e76b7bc163c1b91831e05e81b4756fff4028">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>187</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>188</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasTags>Anatsa</android_malware_ontology:hasTags>
@@ -3381,7 +3384,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_3d1616f903ec09722f794a973aa8c749b3648c4e749063b15a826fd0197812e0">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>113</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>114</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasSHA1Hash>a1e39559bbdd1ef3a5b5bc818c479c0aec51613e</android_malware_ontology:hasSHA1Hash>
@@ -3726,7 +3729,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_93c49518f0e808464e9ec406c4cd6dbf31fc6091e6cec32b781e02707283843d">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>125</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>126</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
   </android_malware_ontology:MalwareReport>
@@ -3869,7 +3872,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_721a57dc3b83ac60ccec8dc6a99f73117387cb8d23d62ed6a7a21ffcf0d4cfee">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>105</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>106</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -3973,7 +3976,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_bc3af4140b26daa0c2d3e1069f3e002c071ef869a89ebbf5ed5d21bffcd83808">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>125</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>126</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasSHA1Hash>1718fb119f6c98693ce970dbf68e7d6ff5cc6b6d</android_malware_ontology:hasSHA1Hash>
@@ -4052,7 +4055,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_cbfbf0f209b9e549217672e1849cca232c80831088161a1e5bcd2d6b8acef079">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>145</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>146</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
   </android_malware_ontology:MalwareReport>
@@ -4151,7 +4154,7 @@
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_847ccca40f4bf701bfe258015fbf104c7c1b85825e7c34611978395892bbf5de">
         <android_malware_ontology:hasUploads>1</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>146</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasDownloads>147</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasVendorIntel>
@@ -4214,7 +4217,7 @@
         <android_malware_ontology:hasMalware>
           <j.0:Malware rdf:about="http://idea.rpi.edu/malont#Malware_4c5a6bdab07dba57fe5536b23995fc1ddf117a238b74ade99acd26a2bf545be8">
             <android_malware_ontology:hasOriginCountry>US</android_malware_ontology:hasOriginCountry>
-            <android_malware_ontology:hasLastSeen>2023-07-06 02:39:50</android_malware_ontology:hasLastSeen>
+            <android_malware_ontology:hasLastSeen>2023-07-07 02:35:41</android_malware_ontology:hasLastSeen>
             <android_malware_ontology:hasFirstSeen>2023-05-28 02:28:23</android_malware_ontology:hasFirstSeen>
           </j.0:Malware>
         </android_malware_ontology:hasMalware>
@@ -4258,8 +4261,8 @@
     <android_malware_ontology:hasTags>apk</android_malware_ontology:hasTags>
     <android_malware_ontology:hasIntelligence>
       <android_malware_ontology:Intelligence rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence_4c5a6bdab07dba57fe5536b23995fc1ddf117a238b74ade99acd26a2bf545be8">
-        <android_malware_ontology:hasUploads>78</android_malware_ontology:hasUploads>
-        <android_malware_ontology:hasDownloads>148</android_malware_ontology:hasDownloads>
+        <android_malware_ontology:hasUploads>80</android_malware_ontology:hasUploads>
+        <android_malware_ontology:hasDownloads>149</android_malware_ontology:hasDownloads>
       </android_malware_ontology:Intelligence>
     </android_malware_ontology:hasIntelligence>
     <android_malware_ontology:hasDeliveryMethod>web_download</android_malware_ontology:hasDeliveryMethod>

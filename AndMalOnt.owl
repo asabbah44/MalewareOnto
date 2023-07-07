@@ -63,10 +63,10 @@
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileInformation -->
 
-<!--    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileInformation">-->
-<!--        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>-->
-<!--        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Application"/>-->
-<!--    </owl:ObjectProperty>-->
+<!--    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileInformation"> -->
+<!--         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Application"/> -->
+<!--      <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/> -->
+<!--          </owl:ObjectProperty> -->
     
 
 
@@ -530,7 +530,7 @@
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#FileInformation -->
 
-    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#FileInformation"/>
+<!--     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#FileInformation"/> -->
     
 
 
@@ -543,6 +543,10 @@
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport -->
+     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport">
+            <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Report"/>
+        </owl:Class>
+
 
     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter">
         <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Person"/>
@@ -570,11 +574,7 @@
     
 
 
-    <!-- http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator">
-        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Report"/>
-    </rdf:Description>
     
 
 
