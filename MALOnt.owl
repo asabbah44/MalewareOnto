@@ -130,7 +130,6 @@
     <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#exploits">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Vulnerability_CVEID"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Vulnerability_Desc"/>
@@ -167,7 +166,6 @@
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Infrastructure"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Keylogger"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Network"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Port"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Protocol"/>
@@ -219,7 +217,6 @@
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Keylogger"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Location"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Network"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Phishing"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Port"/>
@@ -255,10 +252,8 @@
 
     <owl:ObjectProperty rdf:about="http://idea.rpi.edu/malont#hasAlias">
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#ThreatActor"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#ThreatActor"/>
         <rdfs:label>hasAlias</rdfs:label>
     </owl:ObjectProperty>
@@ -280,7 +275,6 @@
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Keylogger"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Ransomware"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#RemoteAccessTrojan-RAT"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#ResourceExploitation"/>
@@ -420,7 +414,6 @@
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Infrastructure"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Keylogger"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#OperatingSystem"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Organization"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Person"/>
@@ -503,7 +496,6 @@
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Keylogger"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Location"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#OperatingSystem"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Organization"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Person"/>
@@ -1016,14 +1008,6 @@ Example from STIX2.1
     
 
 
-    <!-- http://idea.rpi.edu/malont#MalwareFamily -->
-
-    <owl:Class rdf:about="http://idea.rpi.edu/malont#MalwareFamily">
-        <rdfs:label>MalwareFamily</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://idea.rpi.edu/malont#Network -->
 
     <owl:Class rdf:about="http://idea.rpi.edu/malont#Network">
@@ -1390,7 +1374,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Account1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account1</rdfs:label>
+        <rdfs:label>Account1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1398,7 +1382,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Account2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account2</rdfs:label>
+        <rdfs:label>Account2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1406,7 +1390,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Account3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account3</rdfs:label>
+        <rdfs:label>Account3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1414,7 +1398,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Account4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Account4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account4</rdfs:label>
+        <rdfs:label>Account4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1422,7 +1406,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation1</rdfs:label>
+        <rdfs:label>AccountAuthenticationInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1430,7 +1414,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation2</rdfs:label>
+        <rdfs:label>AccountAuthenticationInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1438,7 +1422,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation3</rdfs:label>
+        <rdfs:label>AccountAuthenticationInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1446,7 +1430,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AccountAuthenticationInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AccountAuthenticationInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccountAuthenticationInformation4</rdfs:label>
+        <rdfs:label>AccountAuthenticationInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1454,7 +1438,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Action1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action1</rdfs:label>
+        <rdfs:label>Action1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1462,7 +1446,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Action2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action2</rdfs:label>
+        <rdfs:label>Action2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1470,7 +1454,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Action3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action3</rdfs:label>
+        <rdfs:label>Action3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1478,7 +1462,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Action4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Action4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action4</rdfs:label>
+        <rdfs:label>Action4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1486,7 +1470,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ActionModifier1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier1</rdfs:label>
+        <rdfs:label>ActionModifier1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1494,7 +1478,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ActionModifier2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier2</rdfs:label>
+        <rdfs:label>ActionModifier2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1502,7 +1486,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ActionModifier3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier3</rdfs:label>
+        <rdfs:label>ActionModifier3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1510,7 +1494,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ActionModifier4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ActionModifier4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionModifier4</rdfs:label>
+        <rdfs:label>ActionModifier4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1519,10 +1503,10 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
-        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP1</hasIP>
-        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port1</hasPort>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL1</hasURL>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address1</rdfs:label>
+        <hasIP>IP1</hasIP>
+        <hasPort>port1</hasPort>
+        <hasURL>URL1</hasURL>
+        <rdfs:label>Address1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1531,10 +1515,10 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
-        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP2</hasIP>
-        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port2</hasPort>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL2</hasURL>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address2</rdfs:label>
+        <hasIP>IP2</hasIP>
+        <hasPort>port2</hasPort>
+        <hasURL>URL2</hasURL>
+        <rdfs:label>Address2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1543,10 +1527,10 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
-        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP3</hasIP>
-        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port3</hasPort>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL3</hasURL>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address3</rdfs:label>
+        <hasIP>IP3</hasIP>
+        <hasPort>port3</hasPort>
+        <hasURL>URL3</hasURL>
+        <rdfs:label>Address3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1555,10 +1539,10 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Address4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Address"/>
-        <hasIP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP4</hasIP>
-        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port4</hasPort>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL4</hasURL>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address4</rdfs:label>
+        <hasIP>IP4</hasIP>
+        <hasPort>port4</hasPort>
+        <hasURL>URL4</hasURL>
+        <rdfs:label>Address4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1570,7 +1554,7 @@ Relative Time expressed in relative qualtiiable values.
         <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup1"/>
         <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Malware1"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker1</rdfs:label>
+        <rdfs:label>Attacker1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1582,7 +1566,7 @@ Relative Time expressed in relative qualtiiable values.
         <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup2"/>
         <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Malware2"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker2</rdfs:label>
+        <rdfs:label>Attacker2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1594,7 +1578,7 @@ Relative Time expressed in relative qualtiiable values.
         <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup3"/>
         <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Malware3"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker3</rdfs:label>
+        <rdfs:label>Attacker3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1606,7 +1590,7 @@ Relative Time expressed in relative qualtiiable values.
         <belongsTo rdf:resource="http://idea.rpi.edu/malont#AttackerGroup4"/>
         <hasAuthor rdf:resource="http://idea.rpi.edu/malont#Malware4"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attacker4</rdfs:label>
+        <rdfs:label>Attacker4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1615,7 +1599,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup1">
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup1</rdfs:label>
+        <rdfs:label>AttackerGroup1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1624,7 +1608,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup2">
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup2</rdfs:label>
+        <rdfs:label>AttackerGroup2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1633,7 +1617,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup3">
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup3</rdfs:label>
+        <rdfs:label>AttackerGroup3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1642,7 +1626,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AttackerGroup4">
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackerGroup4</rdfs:label>
+        <rdfs:label>AttackerGroup4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1650,7 +1634,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AuthenticationHash1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash1</rdfs:label>
+        <rdfs:label>AuthenticationHash1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1658,7 +1642,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AuthenticationHash2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash2</rdfs:label>
+        <rdfs:label>AuthenticationHash2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1666,7 +1650,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AuthenticationHash3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash3</rdfs:label>
+        <rdfs:label>AuthenticationHash3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1674,7 +1658,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#AuthenticationHash4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#AuthenticationHash4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuthenticationHash4</rdfs:label>
+        <rdfs:label>AuthenticationHash4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1682,7 +1666,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#BusinessInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation1</rdfs:label>
+        <rdfs:label>BusinessInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1690,7 +1674,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#BusinessInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation2</rdfs:label>
+        <rdfs:label>BusinessInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1698,7 +1682,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#BusinessInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation3</rdfs:label>
+        <rdfs:label>BusinessInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1706,7 +1690,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#BusinessInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#BusinessInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BusinessInformation4</rdfs:label>
+        <rdfs:label>BusinessInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1717,7 +1701,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign1</rdfs:label>
+        <rdfs:label>Campaign1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1728,7 +1712,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign2</rdfs:label>
+        <rdfs:label>Campaign2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1739,7 +1723,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign3</rdfs:label>
+        <rdfs:label>Campaign3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1750,7 +1734,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Campaign"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign4</rdfs:label>
+        <rdfs:label>Campaign4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1758,7 +1742,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CopyAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction1</rdfs:label>
+        <rdfs:label>CopyAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1766,7 +1750,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CopyAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction2</rdfs:label>
+        <rdfs:label>CopyAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1774,7 +1758,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CopyAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction3</rdfs:label>
+        <rdfs:label>CopyAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1782,7 +1766,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CopyAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CopyAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyAction4</rdfs:label>
+        <rdfs:label>CopyAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1791,7 +1775,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country1</rdfs:label>
+        <rdfs:label>Country1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1800,7 +1784,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country2</rdfs:label>
+        <rdfs:label>Country2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1809,7 +1793,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country3</rdfs:label>
+        <rdfs:label>Country3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1818,7 +1802,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Country4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Country"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country4</rdfs:label>
+        <rdfs:label>Country4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1826,7 +1810,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CourseOfAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction1</rdfs:label>
+        <rdfs:label>CourseOfAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1834,7 +1818,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CourseOfAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction2</rdfs:label>
+        <rdfs:label>CourseOfAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1842,7 +1826,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CourseOfAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction3</rdfs:label>
+        <rdfs:label>CourseOfAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1850,7 +1834,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#CourseOfAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#CourseOfAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CourseOfAction4</rdfs:label>
+        <rdfs:label>CourseOfAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1858,7 +1842,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DataSource1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource1</rdfs:label>
+        <rdfs:label>DataSource1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1866,7 +1850,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DataSource2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource2</rdfs:label>
+        <rdfs:label>DataSource2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1874,7 +1858,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DataSource3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource3</rdfs:label>
+        <rdfs:label>DataSource3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1882,7 +1866,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DataSource4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DataSource4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataSource4</rdfs:label>
+        <rdfs:label>DataSource4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1890,7 +1874,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DigitalAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction1</rdfs:label>
+        <rdfs:label>DigitalAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1898,7 +1882,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DigitalAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction2</rdfs:label>
+        <rdfs:label>DigitalAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1906,7 +1890,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DigitalAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction3</rdfs:label>
+        <rdfs:label>DigitalAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1914,7 +1898,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DigitalAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DigitalAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigitalAction4</rdfs:label>
+        <rdfs:label>DigitalAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1922,7 +1906,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DriversLicenseNumber1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber1</rdfs:label>
+        <rdfs:label>DriversLicenseNumber1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1930,7 +1914,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DriversLicenseNumber2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber2</rdfs:label>
+        <rdfs:label>DriversLicenseNumber2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1938,7 +1922,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DriversLicenseNumber3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber3</rdfs:label>
+        <rdfs:label>DriversLicenseNumber3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1946,7 +1930,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#DriversLicenseNumber4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#DriversLicenseNumber4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DriversLicenseNumber4</rdfs:label>
+        <rdfs:label>DriversLicenseNumber4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1955,7 +1939,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper1</rdfs:label>
+        <rdfs:label>Dropper1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1964,7 +1948,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper2</rdfs:label>
+        <rdfs:label>Dropper2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1973,7 +1957,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper3</rdfs:label>
+        <rdfs:label>Dropper3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1982,7 +1966,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Dropper4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Dropper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dropper4</rdfs:label>
+        <rdfs:label>Dropper4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1991,9 +1975,9 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email1">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
-        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress1</hasEmailAddress>
-        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject1</untitled-ontology-16:hasEmailSubject>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email1</rdfs:label>
+        <hasEmailAddress>emailAddress1</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject>emailSubject1</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label>Email1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2002,9 +1986,9 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email2">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
-        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress2</hasEmailAddress>
-        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject2</untitled-ontology-16:hasEmailSubject>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email2</rdfs:label>
+        <hasEmailAddress>emailAddress2</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject>emailSubject2</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label>Email2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2013,9 +1997,9 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email3">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
-        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress3</hasEmailAddress>
-        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject3</untitled-ontology-16:hasEmailSubject>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email3</rdfs:label>
+        <hasEmailAddress>emailAddress3</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject>emailSubject3</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label>Email3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2024,9 +2008,9 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Email4">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Email"/>
-        <hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailAddress4</hasEmailAddress>
-        <untitled-ontology-16:hasEmailSubject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emailSubject4</untitled-ontology-16:hasEmailSubject>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email4</rdfs:label>
+        <hasEmailAddress>emailAddress4</hasEmailAddress>
+        <untitled-ontology-16:hasEmailSubject>emailSubject4</untitled-ontology-16:hasEmailSubject>
+        <rdfs:label>Email4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2034,7 +2018,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#EmailAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction1</rdfs:label>
+        <rdfs:label>EmailAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2042,7 +2026,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#EmailAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction2</rdfs:label>
+        <rdfs:label>EmailAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2050,7 +2034,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#EmailAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction3</rdfs:label>
+        <rdfs:label>EmailAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2058,7 +2042,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#EmailAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#EmailAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmailAction4</rdfs:label>
+        <rdfs:label>EmailAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2066,7 +2050,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Event1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event1</rdfs:label>
+        <rdfs:label>Event1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2074,7 +2058,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Event2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event2</rdfs:label>
+        <rdfs:label>Event2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2082,7 +2066,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Event3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event3</rdfs:label>
+        <rdfs:label>Event3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2090,7 +2074,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Event4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Event4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event4</rdfs:label>
+        <rdfs:label>Event4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2098,7 +2082,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Exploit1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit1</rdfs:label>
+        <rdfs:label>Exploit1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2106,7 +2090,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Exploit2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit2</rdfs:label>
+        <rdfs:label>Exploit2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2114,7 +2098,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Exploit3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit3</rdfs:label>
+        <rdfs:label>Exploit3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2122,7 +2106,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Exploit4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Exploit4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploit4</rdfs:label>
+        <rdfs:label>Exploit4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2131,7 +2115,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject1">
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject1</rdfs:label>
+        <rdfs:label>ExploitTargetObject1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2140,7 +2124,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject2">
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject2</rdfs:label>
+        <rdfs:label>ExploitTargetObject2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2149,7 +2133,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject3">
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject3</rdfs:label>
+        <rdfs:label>ExploitTargetObject3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2158,7 +2142,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ExploitTargetObject4">
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExploitTargetObject4</rdfs:label>
+        <rdfs:label>ExploitTargetObject4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2167,12 +2151,12 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
-        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension1</hasFileExtension>
-        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName1</hasFileName>
-        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath1</hasFilePath>
-        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize1</hasFileSize>
-        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType1</hasFileType>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File1</rdfs:label>
+        <hasFileExtension>fileExtension1</hasFileExtension>
+        <hasFileName>fileName1</hasFileName>
+        <hasFilePath>filePath1</hasFilePath>
+        <hasFileSize>fileSize1</hasFileSize>
+        <hasFileType>fileType1</hasFileType>
+        <rdfs:label>File1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2181,12 +2165,12 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
-        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension2</hasFileExtension>
-        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName2</hasFileName>
-        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath2</hasFilePath>
-        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize2</hasFileSize>
-        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType2</hasFileType>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File2</rdfs:label>
+        <hasFileExtension>fileExtension2</hasFileExtension>
+        <hasFileName>fileName2</hasFileName>
+        <hasFilePath>filePath2</hasFilePath>
+        <hasFileSize>fileSize2</hasFileSize>
+        <hasFileType>fileType2</hasFileType>
+        <rdfs:label>File2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2195,12 +2179,12 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
-        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension3</hasFileExtension>
-        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName3</hasFileName>
-        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath3</hasFilePath>
-        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize3</hasFileSize>
-        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType3</hasFileType>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File3</rdfs:label>
+        <hasFileExtension>fileExtension3</hasFileExtension>
+        <hasFileName>fileName3</hasFileName>
+        <hasFilePath>filePath3</hasFilePath>
+        <hasFileSize>fileSize3</hasFileSize>
+        <hasFileType>fileType3</hasFileType>
+        <rdfs:label>File3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2209,12 +2193,12 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#File4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#File"/>
-        <hasFileExtension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileExtension4</hasFileExtension>
-        <hasFileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileName4</hasFileName>
-        <hasFilePath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filePath4</hasFilePath>
-        <hasFileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileSize4</hasFileSize>
-        <hasFileType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fileType4</hasFileType>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File4</rdfs:label>
+        <hasFileExtension>fileExtension4</hasFileExtension>
+        <hasFileName>fileName4</hasFileName>
+        <hasFilePath>filePath4</hasFilePath>
+        <hasFileSize>fileSize4</hasFileSize>
+        <hasFileType>fileType4</hasFileType>
+        <rdfs:label>File4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2222,7 +2206,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation1</rdfs:label>
+        <rdfs:label>FinancialInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2230,7 +2214,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation2</rdfs:label>
+        <rdfs:label>FinancialInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2238,7 +2222,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation3</rdfs:label>
+        <rdfs:label>FinancialInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2246,7 +2230,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialInformation4</rdfs:label>
+        <rdfs:label>FinancialInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2254,7 +2238,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialTransactionAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction1</rdfs:label>
+        <rdfs:label>FinancialTransactionAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2262,7 +2246,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialTransactionAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction2</rdfs:label>
+        <rdfs:label>FinancialTransactionAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2270,7 +2254,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialTransactionAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction3</rdfs:label>
+        <rdfs:label>FinancialTransactionAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2278,7 +2262,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#FinancialTransactionAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#FinancialTransactionAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialTransactionAction4</rdfs:label>
+        <rdfs:label>FinancialTransactionAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2287,7 +2271,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus1</rdfs:label>
+        <rdfs:label>GeneralVirus1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2296,7 +2280,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus2</rdfs:label>
+        <rdfs:label>GeneralVirus2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2305,7 +2289,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus3</rdfs:label>
+        <rdfs:label>GeneralVirus3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2314,7 +2298,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#GeneralVirus4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#GeneralVirus"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralVirus4</rdfs:label>
+        <rdfs:label>GeneralVirus4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2323,7 +2307,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash1</rdfs:label>
+        <rdfs:label>Hash1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2332,7 +2316,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash2</rdfs:label>
+        <rdfs:label>Hash2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2341,7 +2325,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash3</rdfs:label>
+        <rdfs:label>Hash3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2350,7 +2334,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Hash4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Hash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash4</rdfs:label>
+        <rdfs:label>Hash4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2358,7 +2342,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Host1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host1</rdfs:label>
+        <rdfs:label>Host1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2366,7 +2350,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Host2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host2</rdfs:label>
+        <rdfs:label>Host2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2374,7 +2358,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Host3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host3</rdfs:label>
+        <rdfs:label>Host3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2382,7 +2366,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Host4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Host4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host4</rdfs:label>
+        <rdfs:label>Host4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2391,7 +2375,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator1">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator1</rdfs:label>
+        <rdfs:label>Indicator1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2400,7 +2384,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator2">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator2</rdfs:label>
+        <rdfs:label>Indicator2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2409,7 +2393,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator3">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator3</rdfs:label>
+        <rdfs:label>Indicator3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2418,7 +2402,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Indicator4">
         <rdf:type rdf:resource="http://www.semanticweb.org/yeed3/ontologies/2020/5/untitled-ontology-16#Indicator"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicator4</rdfs:label>
+        <rdfs:label>Indicator4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2426,7 +2410,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Information1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information1</rdfs:label>
+        <rdfs:label>Information1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2434,7 +2418,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Information2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information2</rdfs:label>
+        <rdfs:label>Information2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2442,7 +2426,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Information3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information3</rdfs:label>
+        <rdfs:label>Information3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2450,7 +2434,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Information4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Information4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information4</rdfs:label>
+        <rdfs:label>Information4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2458,7 +2442,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#InstallAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction1</rdfs:label>
+        <rdfs:label>InstallAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2466,7 +2450,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#InstallAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction2</rdfs:label>
+        <rdfs:label>InstallAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2474,7 +2458,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#InstallAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction3</rdfs:label>
+        <rdfs:label>InstallAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2482,7 +2466,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#InstallAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#InstallAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstallAction4</rdfs:label>
+        <rdfs:label>InstallAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2490,7 +2474,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Locality1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality1</rdfs:label>
+        <rdfs:label>Locality1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2498,7 +2482,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Locality2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality2</rdfs:label>
+        <rdfs:label>Locality2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2506,7 +2490,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Locality3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality3</rdfs:label>
+        <rdfs:label>Locality3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2514,7 +2498,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Locality4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Locality4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality4</rdfs:label>
+        <rdfs:label>Locality4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2523,7 +2507,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location1</rdfs:label>
+        <rdfs:label>Location1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2532,7 +2516,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location2</rdfs:label>
+        <rdfs:label>Location2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2541,7 +2525,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location3</rdfs:label>
+        <rdfs:label>Location3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2550,7 +2534,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Location4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Location"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location4</rdfs:label>
+        <rdfs:label>Location4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2559,7 +2543,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_1</rdfs:label>
+        <rdfs:label>MD5_1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2568,7 +2552,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_2</rdfs:label>
+        <rdfs:label>MD5_2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2577,7 +2561,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_3</rdfs:label>
+        <rdfs:label>MD5_3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2586,7 +2570,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MD5_4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#MD5"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5_4</rdfs:label>
+        <rdfs:label>MD5_4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2597,7 +2581,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware1</rdfs:label>
+        <rdfs:label>Malware1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2608,7 +2592,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject2"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware2</rdfs:label>
+        <rdfs:label>Malware2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2619,7 +2603,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware3</rdfs:label>
+        <rdfs:label>Malware3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2630,7 +2614,7 @@ Relative Time expressed in relative qualtiiable values.
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
         <untitled-ontology-15:targets rdf:resource="http://idea.rpi.edu/malont#ExploitTargetObject4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware4</rdfs:label>
+        <rdfs:label>Malware4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2638,7 +2622,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareCharacteristics1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics1</rdfs:label>
+        <rdfs:label>MalwareCharacteristics1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2646,7 +2630,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareCharacteristics2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics2</rdfs:label>
+        <rdfs:label>MalwareCharacteristics2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2654,7 +2638,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareCharacteristics3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics3</rdfs:label>
+        <rdfs:label>MalwareCharacteristics3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2662,7 +2646,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareCharacteristics4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareCharacteristics4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareCharacteristics4</rdfs:label>
+        <rdfs:label>MalwareCharacteristics4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2670,8 +2654,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareFamily1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily1">
-        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily1</rdfs:label>
+        <rdfs:label>MalwareFamily1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2679,8 +2662,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareFamily2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily2">
-        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily2</rdfs:label>
+        <rdfs:label>MalwareFamily2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2688,8 +2670,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareFamily3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily3">
-        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily3</rdfs:label>
+        <rdfs:label>MalwareFamily3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2697,8 +2678,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MalwareFamily4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MalwareFamily4">
-        <rdf:type rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MalwareFamily4</rdfs:label>
+        <rdfs:label>MalwareFamily4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2706,7 +2686,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MedicalInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation1</rdfs:label>
+        <rdfs:label>MedicalInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2714,7 +2694,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MedicalInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation2</rdfs:label>
+        <rdfs:label>MedicalInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2722,7 +2702,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MedicalInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation3</rdfs:label>
+        <rdfs:label>MedicalInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2730,7 +2710,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#MedicalInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#MedicalInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalInformation4</rdfs:label>
+        <rdfs:label>MedicalInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2738,7 +2718,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ModificationAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction1</rdfs:label>
+        <rdfs:label>ModificationAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2746,7 +2726,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ModificationAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction2</rdfs:label>
+        <rdfs:label>ModificationAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2754,7 +2734,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ModificationAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction3</rdfs:label>
+        <rdfs:label>ModificationAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2762,7 +2742,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#ModificationAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#ModificationAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationAction4</rdfs:label>
+        <rdfs:label>ModificationAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2770,7 +2750,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#NetworkInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation1</rdfs:label>
+        <rdfs:label>NetworkInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2778,7 +2758,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#NetworkInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation2</rdfs:label>
+        <rdfs:label>NetworkInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2786,7 +2766,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#NetworkInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation3</rdfs:label>
+        <rdfs:label>NetworkInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2794,7 +2774,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#NetworkInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#NetworkInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkInformation4</rdfs:label>
+        <rdfs:label>NetworkInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2802,7 +2782,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Obfuscation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation1</rdfs:label>
+        <rdfs:label>Obfuscation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2810,7 +2790,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Obfuscation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation2</rdfs:label>
+        <rdfs:label>Obfuscation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2818,7 +2798,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Obfuscation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation3</rdfs:label>
+        <rdfs:label>Obfuscation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2826,7 +2806,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Obfuscation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Obfuscation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obfuscation4</rdfs:label>
+        <rdfs:label>Obfuscation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2835,7 +2815,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization1</rdfs:label>
+        <rdfs:label>Organization1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2844,7 +2824,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization2</rdfs:label>
+        <rdfs:label>Organization2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2853,7 +2833,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization3</rdfs:label>
+        <rdfs:label>Organization3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2862,7 +2842,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Organization4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization4</rdfs:label>
+        <rdfs:label>Organization4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2870,7 +2850,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Password1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password1</rdfs:label>
+        <rdfs:label>Password1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2878,7 +2858,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Password2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password2</rdfs:label>
+        <rdfs:label>Password2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2886,7 +2866,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Password3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password3</rdfs:label>
+        <rdfs:label>Password3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2894,7 +2874,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Password4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Password4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Password4</rdfs:label>
+        <rdfs:label>Password4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2902,7 +2882,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Payload1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload1</rdfs:label>
+        <rdfs:label>Payload1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2910,7 +2890,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Payload2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload2</rdfs:label>
+        <rdfs:label>Payload2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2918,7 +2898,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Payload3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload3</rdfs:label>
+        <rdfs:label>Payload3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2926,7 +2906,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Payload4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Payload4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Payload4</rdfs:label>
+        <rdfs:label>Payload4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2935,7 +2915,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person1</rdfs:label>
+        <rdfs:label>Person1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2944,7 +2924,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person2</rdfs:label>
+        <rdfs:label>Person2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2953,7 +2933,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person3</rdfs:label>
+        <rdfs:label>Person3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2962,7 +2942,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Person4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person4</rdfs:label>
+        <rdfs:label>Person4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2970,7 +2950,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#PrintAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction1</rdfs:label>
+        <rdfs:label>PrintAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2978,7 +2958,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#PrintAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction2</rdfs:label>
+        <rdfs:label>PrintAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2986,7 +2966,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#PrintAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction3</rdfs:label>
+        <rdfs:label>PrintAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2994,7 +2974,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#PrintAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#PrintAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrintAction4</rdfs:label>
+        <rdfs:label>PrintAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3003,7 +2983,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region1</rdfs:label>
+        <rdfs:label>Region1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3012,7 +2992,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region2</rdfs:label>
+        <rdfs:label>Region2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3021,7 +3001,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region3</rdfs:label>
+        <rdfs:label>Region3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3030,7 +3010,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Region4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Region"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region4</rdfs:label>
+        <rdfs:label>Region4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3039,7 +3019,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_1</rdfs:label>
+        <rdfs:label>SHA-1_1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3048,7 +3028,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_2</rdfs:label>
+        <rdfs:label>SHA-1_2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3057,7 +3037,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_3</rdfs:label>
+        <rdfs:label>SHA-1_3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3066,7 +3046,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-1_4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-1"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-1_4</rdfs:label>
+        <rdfs:label>SHA-1_4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3075,7 +3055,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_1</rdfs:label>
+        <rdfs:label>SHA-256_1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3084,7 +3064,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_2</rdfs:label>
+        <rdfs:label>SHA-256_2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3093,7 +3073,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_3</rdfs:label>
+        <rdfs:label>SHA-256_3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3102,7 +3082,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SHA-256_4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SHA-256"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHA-256_4</rdfs:label>
+        <rdfs:label>SHA-256_4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3111,7 +3091,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep1</rdfs:label>
+        <rdfs:label>SSDeep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3120,7 +3100,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep2</rdfs:label>
+        <rdfs:label>SSDeep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3129,7 +3109,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep3</rdfs:label>
+        <rdfs:label>SSDeep3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3138,7 +3118,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SSDeep4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSDeep4</rdfs:label>
+        <rdfs:label>SSDeep4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3146,7 +3126,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SearchAction1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction1</rdfs:label>
+        <rdfs:label>SearchAction1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3154,7 +3134,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SearchAction2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction2</rdfs:label>
+        <rdfs:label>SearchAction2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3162,7 +3142,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SearchAction3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction3</rdfs:label>
+        <rdfs:label>SearchAction3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3170,7 +3150,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SearchAction4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SearchAction4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchAction4</rdfs:label>
+        <rdfs:label>SearchAction4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3178,7 +3158,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SocialSecurityNumber1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber1</rdfs:label>
+        <rdfs:label>SocialSecurityNumber1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3186,7 +3166,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SocialSecurityNumber2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber2</rdfs:label>
+        <rdfs:label>SocialSecurityNumber2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3194,7 +3174,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SocialSecurityNumber3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber3</rdfs:label>
+        <rdfs:label>SocialSecurityNumber3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3202,7 +3182,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SocialSecurityNumber4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SocialSecurityNumber4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialSecurityNumber4</rdfs:label>
+        <rdfs:label>SocialSecurityNumber4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3212,9 +3192,9 @@ Relative Time expressed in relative qualtiiable values.
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability1"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear1</hasReleaseYear>
-        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version1</hasVersion>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software1</rdfs:label>
+        <hasReleaseYear>releaseYear1</hasReleaseYear>
+        <hasVersion>version1</hasVersion>
+        <rdfs:label>Software1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3224,9 +3204,9 @@ Relative Time expressed in relative qualtiiable values.
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability2"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear2</hasReleaseYear>
-        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version2</hasVersion>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software2</rdfs:label>
+        <hasReleaseYear>releaseYear2</hasReleaseYear>
+        <hasVersion>version2</hasVersion>
+        <rdfs:label>Software2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3236,9 +3216,9 @@ Relative Time expressed in relative qualtiiable values.
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability3"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear3</hasReleaseYear>
-        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version3</hasVersion>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software3</rdfs:label>
+        <hasReleaseYear>releaseYear3</hasReleaseYear>
+        <hasVersion>version3</hasVersion>
+        <rdfs:label>Software3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3248,9 +3228,9 @@ Relative Time expressed in relative qualtiiable values.
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Software4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Software"/>
         <hasVulnerability rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">releaseYear4</hasReleaseYear>
-        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version4</hasVersion>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software4</rdfs:label>
+        <hasReleaseYear>releaseYear4</hasReleaseYear>
+        <hasVersion>version4</hasVersion>
+        <rdfs:label>Software4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3258,7 +3238,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SourceCodeInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation1</rdfs:label>
+        <rdfs:label>SourceCodeInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3266,7 +3246,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SourceCodeInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation2</rdfs:label>
+        <rdfs:label>SourceCodeInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3274,7 +3254,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SourceCodeInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation3</rdfs:label>
+        <rdfs:label>SourceCodeInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3282,7 +3262,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SourceCodeInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SourceCodeInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceCodeInformation4</rdfs:label>
+        <rdfs:label>SourceCodeInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3291,7 +3271,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System1</rdfs:label>
+        <rdfs:label>System1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3300,7 +3280,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System2</rdfs:label>
+        <rdfs:label>System2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3309,7 +3289,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System3</rdfs:label>
+        <rdfs:label>System3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3318,7 +3298,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#System4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#System"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System4</rdfs:label>
+        <rdfs:label>System4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3326,7 +3306,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation1</rdfs:label>
+        <rdfs:label>SystemConfigurationInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3334,7 +3314,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation2</rdfs:label>
+        <rdfs:label>SystemConfigurationInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3342,7 +3322,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation3</rdfs:label>
+        <rdfs:label>SystemConfigurationInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3350,7 +3330,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation4</rdfs:label>
+        <rdfs:label>SystemConfigurationInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3358,7 +3338,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemConfigurationInformation5 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemConfigurationInformation5">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemConfigurationInformation5</rdfs:label>
+        <rdfs:label>SystemConfigurationInformation5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3366,7 +3346,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation1</rdfs:label>
+        <rdfs:label>SystemInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3374,7 +3354,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation2</rdfs:label>
+        <rdfs:label>SystemInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3382,7 +3362,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation3</rdfs:label>
+        <rdfs:label>SystemInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3390,7 +3370,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#SystemInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#SystemInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemInformation4</rdfs:label>
+        <rdfs:label>SystemInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3398,7 +3378,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#TechnologyInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation1</rdfs:label>
+        <rdfs:label>TechnologyInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3406,7 +3386,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#TechnologyInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation2</rdfs:label>
+        <rdfs:label>TechnologyInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3414,7 +3394,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#TechnologyInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation3</rdfs:label>
+        <rdfs:label>TechnologyInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3422,7 +3402,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#TechnologyInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TechnologyInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechnologyInformation4</rdfs:label>
+        <rdfs:label>TechnologyInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3431,7 +3411,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time1</rdfs:label>
+        <rdfs:label>Time1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3440,7 +3420,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time2</rdfs:label>
+        <rdfs:label>Time2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3449,7 +3429,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time3</rdfs:label>
+        <rdfs:label>Time3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3458,7 +3438,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Time4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Time"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time4</rdfs:label>
+        <rdfs:label>Time4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3467,7 +3447,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Trojan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse1</rdfs:label>
+        <rdfs:label>TrojanHorse1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3476,7 +3456,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Trojan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse2</rdfs:label>
+        <rdfs:label>TrojanHorse2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3485,7 +3465,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Trojan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse3</rdfs:label>
+        <rdfs:label>TrojanHorse3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3494,7 +3474,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#TrojanHorse4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Trojan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TrojanHorse4</rdfs:label>
+        <rdfs:label>TrojanHorse4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3502,7 +3482,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation1</rdfs:label>
+        <rdfs:label>UniquelyIdentifiableInformation1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3510,7 +3490,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation2</rdfs:label>
+        <rdfs:label>UniquelyIdentifiableInformation2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3518,7 +3498,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation3</rdfs:label>
+        <rdfs:label>UniquelyIdentifiableInformation3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3526,7 +3506,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UniquelyIdentifiableInformation4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UniquelyIdentifiableInformation4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniquelyIdentifiableInformation4</rdfs:label>
+        <rdfs:label>UniquelyIdentifiableInformation4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3534,7 +3514,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#User1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User1</rdfs:label>
+        <rdfs:label>User1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3542,7 +3522,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#User2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User2</rdfs:label>
+        <rdfs:label>User2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3550,7 +3530,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#User3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User3</rdfs:label>
+        <rdfs:label>User3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3558,7 +3538,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#User4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#User4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User4</rdfs:label>
+        <rdfs:label>User4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3566,7 +3546,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UserName1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName1</rdfs:label>
+        <rdfs:label>UserName1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3574,7 +3554,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UserName2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName2</rdfs:label>
+        <rdfs:label>UserName2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3582,7 +3562,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UserName3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName3</rdfs:label>
+        <rdfs:label>UserName3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3590,7 +3570,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#UserName4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#UserName4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserName4</rdfs:label>
+        <rdfs:label>UserName4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3598,7 +3578,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Vector1 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector1</rdfs:label>
+        <rdfs:label>Vector1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3606,7 +3586,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Vector2 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector2">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector2</rdfs:label>
+        <rdfs:label>Vector2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3614,7 +3594,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Vector3 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector3">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector3</rdfs:label>
+        <rdfs:label>Vector3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3622,7 +3602,7 @@ Relative Time expressed in relative qualtiiable values.
     <!-- http://idea.rpi.edu/malont#Vector4 -->
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vector4">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector4</rdfs:label>
+        <rdfs:label>Vector4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3631,7 +3611,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability1</rdfs:label>
+        <rdfs:label>Vulnerability1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3640,7 +3620,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability2</rdfs:label>
+        <rdfs:label>Vulnerability2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3650,7 +3630,7 @@ Relative Time expressed in relative qualtiiable values.
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
         <exploits rdf:resource="http://idea.rpi.edu/malont#Vulnerability4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability3</rdfs:label>
+        <rdfs:label>Vulnerability3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3659,7 +3639,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#Vulnerability4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Vulnerability"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability4</rdfs:label>
+        <rdfs:label>Vulnerability4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3668,7 +3648,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash1">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash1</rdfs:label>
+        <rdfs:label>vHash1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3677,7 +3657,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash2">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash2</rdfs:label>
+        <rdfs:label>vHash2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3686,7 +3666,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash3">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash3</rdfs:label>
+        <rdfs:label>vHash3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3695,7 +3675,7 @@ Relative Time expressed in relative qualtiiable values.
 
     <owl:NamedIndividual rdf:about="http://idea.rpi.edu/malont#vHash4">
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#vHash"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vHash4</rdfs:label>
+        <rdfs:label>vHash4</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdf:type rdf:resource="http://idea.rpi.edu/malont#Organization"/>
@@ -3730,5 +3710,5 @@ Relative Time expressed in relative qualtiiable values.
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
