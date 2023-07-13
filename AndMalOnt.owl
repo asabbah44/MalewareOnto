@@ -602,12 +602,6 @@
     
 
 
-    <!-- http://idea.rpi.edu/malont#MalwareAnalyzed -->
-
-    <owl:Class rdf:about="http://idea.rpi.edu/malont#MalwareAnalyzed"/>
-    
-
-
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#AppPublisher -->
 
     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#AppPublisher"/>
@@ -665,7 +659,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule -->
 
     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule">
-        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareAnalyzed"/>
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareAnalysis"/>
     </owl:Class>
     
 
