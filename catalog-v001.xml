@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1689189485942" name="duplicate:http://example.com/malware_ontology" uri="mw.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1689189485942" name="duplicate:http://example.com/malware_ontology" uri="mw_bk.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1689189485942" name="http://idea.rpi.edu/malont" uri="MALOnt.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1689189485942" name="http://secuirty.birzeit.edu/android_malware_ontology" uri="AndMalOnt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1689272640178" name="duplicate:http://example.com/malware_ontology" uri="mw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1689272640178" name="duplicate:http://example.com/malware_ontology" uri="mw_bk.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1689272640178" name="http://idea.rpi.edu/malont" uri="MALOnt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1689272640178" name="http://secuirty.birzeit.edu/android_malware_ontology" uri="AndMalOnt.owl"/>
     </group>
 </catalog>
