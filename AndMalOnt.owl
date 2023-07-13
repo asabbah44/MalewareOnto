@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:android_malware_ontology="http://secuirty.birzeit.edu/android_malware_ontology#">
     <owl:Ontology rdf:about="http://secuirty.birzeit.edu/android_malware_ontology">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/asabbah44/MalewareOnto/1b55ec3fe6a8960940b44d1aef130800a8da8618/MALOnt.owl"/>
+        <owl:imports rdf:resource="file:///D:/DataEngineering/FinalProject/MalewareOnto/MALOnt.owl"/>
     </owl:Ontology>
     
 
@@ -37,7 +37,7 @@
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#analysisBy -->
 
-    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#analysisBy">
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#analyzedBy">
         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
     </owl:ObjectProperty>
@@ -657,7 +657,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule -->
 
     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule">
-        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareAnalysis"/>
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareAnalyzed"/>
     </owl:Class>
     
 
