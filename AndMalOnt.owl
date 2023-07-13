@@ -14,9 +14,6 @@
     
 
 
-
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -38,28 +35,68 @@
     
 
 
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasCodeSign -->
 
     <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasCodeSign">
         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#AppPublisher"/>
-        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
     </owl:ObjectProperty>
+    
 
-    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMalware">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasHash -->
+
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasHash">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MD5"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#SHA"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#vHash"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#GIMHASH"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#HashDigestSize"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#IMPHASH"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#TELIFHASH"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#TLSH"/>
     </owl:ObjectProperty>
+    
 
 
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasHashDigestSize -->
+
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasHashDigestSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#SHA"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#HashDigestSize"/>
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasIntelligence -->
 
     <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasIntelligence">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
-        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Statistic"/>
     </owl:ObjectProperty>
+    
 
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMalware -->
+
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMalware">
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
+        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Malware"/>
+    </owl:ObjectProperty>
     
 
 
@@ -82,11 +119,19 @@
     
 
 
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasReporter -->
+
+    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasReporter">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter"/>
+    </owl:ObjectProperty>
+    
+
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasVendorIntel -->
 
     <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasVendorIntel">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
     </owl:ObjectProperty>
     
@@ -95,19 +140,11 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#reportedOn -->
 
     <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#reportedOn">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Application"/>
         <rdfs:label>reportedOn</rdfs:label>
     </owl:ObjectProperty>
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasReporter -->
-
-    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasReporter">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
-        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter"/>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- 
@@ -118,43 +155,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasLink (8) -->
-
-    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasLink">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasTags -->
-
-        <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasTags">
-            <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-
-
- <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasDetectionScore -->
-
-     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasDetectionScore">
-         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
-         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-     </owl:DatatypeProperty>
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasAlgorithm -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasAlgorithm">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasPackageId -->
-
-    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasPackageId">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasApplicationType -->
@@ -170,7 +180,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasComment -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasComment">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -179,7 +189,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasCscbListed -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasCscbListed">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -188,7 +198,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasCscbReason -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasCscbReason">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -218,6 +228,7 @@
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasDetectionScore">
         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasDetectionScore</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -225,7 +236,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasDownloads -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasDownloads">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Statistic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -234,35 +245,28 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileName -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileName">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileSize -->
-
-    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileSize">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileType -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileSize -->
 
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileType">-->
-<!--        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>-->
-<!--        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>-->
-<!--    </owl:DatatypeProperty>-->
+    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileSize">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileTypeMIME -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileTypeMIME">
-            <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
+        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFirstSeen -->
@@ -277,7 +281,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasIssuerCN -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasIssuerCN">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -292,21 +296,22 @@
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMD5Hash -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasLink -->
 
-    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMD5Hash">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasLink">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#VendorIntelligence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasLink</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareFamily -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMD5Hash -->
 
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareFamily">-->
-<!--        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>-->
-<!--        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>-->
-<!--    </owl:DatatypeProperty>-->
+    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMD5Hash">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -328,12 +333,6 @@
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareVerdict -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareVerdict"/>-->
-    
-
-
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasOriginCountry -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasOriginCountry">
@@ -348,15 +347,15 @@
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasPackageId">
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasPackageId</rdfs:label>
     </owl:DatatypeProperty>
     
-
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSHA1Hash -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSHA1Hash">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -365,7 +364,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSHA256Hash -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSHA256Hash">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -374,67 +373,34 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSHA3Hash -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSHA3Hash">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasScannerCount -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasScannerCount"/>-->
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasScannerMatch -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasScannerMatch"/>-->
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasScannerPercent -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasScannerPercent"/>-->
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasScore -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasScore"/>-->
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSerialNumber -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSerialNumber"/>-->
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSignature -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSignature"/>-->
     
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasSubjectCN -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasSubjectCN">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
+    
 
 
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasTags -->
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasThreatName -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasThreatName"/>-->
+    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasTags">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasThumbprint -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasThumbprint">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -442,24 +408,17 @@
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasThumbprintAlgorithm -->
 
-    <owl:DatatypeProperty
-            rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasThumbprintAlgorithm">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasThumbprintAlgorithm">
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasTlsh -->
-
-<!--    <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasTlsh"/>-->
     
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasUploads -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasUploads">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Statistic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -468,7 +427,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasValidFrom -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasValidFrom">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -477,7 +436,7 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasValidTo -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasValidTo">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -508,41 +467,89 @@
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#CodeSign -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#Certificate -->
 
-    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#CodeSign"/>
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#FileInformation -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#DeliveryMethod -->
 
-<!--     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#FileInformation"/> -->
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#DeliveryMethod"/>
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#Intelligence -->
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#File -->
 
-    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Intelligence">
-        <rdfs:comment>Class has information about download, upload, mail....</rdfs:comment>
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#GIMHASH -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#GIMHASH">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
     </owl:Class>
     
 
 
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport -->
-     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReport">
-            <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Report"/>
-        </owl:Class>
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#HashDigestSize -->
 
-
-    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter">
-        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Person"/>
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#HashDigestSize">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
     </owl:Class>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#IMPHASH -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#IMPHASH">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+    </owl:Class>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#MalwareAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareReporter"/>
     
 
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#MalwareSignature -->
 
     <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#MalwareSignature"/>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#Statistic -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#Statistic">
+        <rdfs:comment>Class has information about download, upload, mail....</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#TELIFHASH -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#TELIFHASH">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+    </owl:Class>
+    
+
+
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#TLSH -->
+
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#TLSH">
+        <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/malont#Hash"/>
+    </owl:Class>
     
 
 
@@ -560,7 +567,11 @@
     
 
 
+    <!-- http://secuirty.birzeit.edu/android_malware_ontology#YaraRules -->
 
+    <owl:Class rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#YaraRules">
+        <rdfs:subClassOf rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#IntelligenceRule"/>
+    </owl:Class>
     
 
 
@@ -572,14 +583,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasDetectionScore">
-        <rdfs:label>hasDetectionScore</rdfs:label>
+    <rdf:Description rdf:about="http://idea.rpi.edu/malont#SHA-1">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
-    <rdf:Description rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasLink">
-        <rdfs:label>hasLink</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasPackageId">
-        <rdfs:label>hasPackageId</rdfs:label>
+    <rdf:Description rdf:about="http://idea.rpi.edu/malont#SHA-256">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
 </rdf:RDF>
 
