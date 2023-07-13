@@ -345,8 +345,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasDetectionScore</rdfs:label>
     </owl:DatatypeProperty>
-    
-
 
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasDetectionStatus -->
 
