@@ -122,7 +122,6 @@
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#SSDeep"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#vHash"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#GIMHASH"/>
-        <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#HashDigestSize"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#IMPHASH"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#TELIFHASH"/>
         <rdfs:range rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#TLSH"/>
@@ -164,14 +163,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#MalwareFamily"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareSignature -->
-
-    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasMalwareSignature">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
     </owl:ObjectProperty>
     
 
@@ -221,16 +212,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#Certificate"/>
         <rdfs:range rdf:resource="http://idea.rpi.edu/malont#SHA"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://secuirty.birzeit.edu/android_malware_ontology#reportedOn -->
-
-    <owl:ObjectProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#reportedOn">
-        <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
-        <rdfs:range rdf:resource="http://idea.rpi.edu/malont#Application"/>
-        <rdfs:label>reportedOn</rdfs:label>
     </owl:ObjectProperty>
     
 
