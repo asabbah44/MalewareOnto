@@ -17,6 +17,7 @@ AndMalOnt is a proposed Android malware ontology aimed at categorizing and class
 ## Requirements
 
 ## License
+See [LICENSE](LICENSE)
 
 ## Contribution
 
