@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:android_malware_ontology="http://secuirty.birzeit.edu/android_malware_ontology#">
     <owl:Ontology rdf:about="http://secuirty.birzeit.edu/android_malware_ontology">
-        <owl:imports rdf:resource="file:///C:/M.kharma_data/PhD/04-Fall-Semester-2023/Dataengineering/course_paper/MalewareOnto/MALOnt.owl"/>
+        <owl:imports rdf:resource="file:///D:/DataEngineering/FinalProject/MalewareOnto/MALOnt.owl"/>
     </owl:Ontology>
     
 
