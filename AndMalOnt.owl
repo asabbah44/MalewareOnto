@@ -309,7 +309,6 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasFileTypeMIME -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasFileTypeMIME">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Application"/>
         <rdfs:domain rdf:resource="http://secuirty.birzeit.edu/android_malware_ontology#File"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -420,7 +419,6 @@
     <!-- http://secuirty.birzeit.edu/android_malware_ontology#hasReporterName -->
 
     <owl:DatatypeProperty rdf:about="http://secuirty.birzeit.edu/android_malware_ontology#hasReporterName">
-        <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Malware"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
