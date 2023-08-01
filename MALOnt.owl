@@ -626,7 +626,6 @@
     <!-- http://idea.rpi.edu/malont#hasPort -->
 
     <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasPort">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasPort</rdfs:label>
@@ -637,7 +636,6 @@
     <!-- http://idea.rpi.edu/malont#hasReleaseYear -->
 
     <owl:DatatypeProperty rdf:about="http://idea.rpi.edu/malont#hasReleaseYear">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://idea.rpi.edu/malont#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasReleaseYear</rdfs:label>
