@@ -21,12 +21,12 @@ AndMalOnt is a proposed Android malware ontology aimed at categorizing and class
    <owl:imports rdf:resource="file:///xxxx/MALOnt.owl"/>
    </owl:Ontology>) 
 
-## Requirements
 
 ## License
 See [LICENSE](LICENSE)
 
-## Contribution
-
 ## Contact
+- Ahmed Sabbah : asabah@birzeit.edu
+- Mohammad kharmah : mkharmah@birzeit.edu
+
 
