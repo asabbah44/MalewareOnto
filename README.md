@@ -7,6 +7,8 @@ AndMalOnt is a proposed Android malware ontology aimed at categorizing and class
 - Download Android malware reports from https://bazaar.abuse.ch/ using the provided APIs.
 - Parse the downloaded reports to extract relevant information about the malware samples.
 - Create an OWL representation for the extracted data, forming the AndMalOnt Android malware ontology.
+- We also constructed a knowledge graph of Android malware extracted from the MalwareBazaar repository. 
+- The knowledge graph consists of 2600 nodes (i.e., individuals) represented in the RDF using the AndMalOnt ontology.
 - Enable categorization and classification of Android malware samples based on the extracted information.
 
 ## Usage
